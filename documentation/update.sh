@@ -6,6 +6,7 @@ TOKEN=$1
 
 bap="bap.master"
 ls -la
+pwd
 cd $bap
 bap_commit=`git rev-parse --short HEAD`
 
