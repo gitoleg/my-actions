@@ -4,6 +4,8 @@ set -eu
 
 TOKEN=$1
 
+cd /home/opam
+
 bap="bap.master"
 ls -la
 pwd
