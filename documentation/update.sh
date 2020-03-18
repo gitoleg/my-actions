@@ -5,7 +5,7 @@ set -eu
 TOKEN=$1
 
 bap="bap.master"
-
+ls -la
 cd $bap
 bap_commit=`git rev-parse --short HEAD`
 
