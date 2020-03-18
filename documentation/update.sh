@@ -4,7 +4,9 @@ set -eu
 
 TOKEN=$1
 
-cd /home/opam
+git clone https://github.com/BinaryAnalysisPlatform/bap
+
+exit
 
 bap="bap.master"
 ls -la
