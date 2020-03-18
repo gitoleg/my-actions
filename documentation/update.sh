@@ -2,29 +2,19 @@
 
 set -eu
 
-sync () {
-    if [ -d $1 ]; then
-        rsync -a --delete $1 $2
-    fi
-}
-
-
-eval $(opam env)
-
 TOKEN=$1
 
 bap="bap.master"
 
-git clone https://github.com/BinaryAnalysisPlatform/bap --single-branch --branch=master --depth=1 $bap
 cd $bap
 bap_commit=`git rev-parse --short HEAD`
 
-make doc
 ls doc
 
 blog=blog
 
-git clone https://github.com/BinaryAnalysisPlatform/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=master --depth=1 $blog
+#TODO
+git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=master --depth=1 $blog
 
 mkdir -p $blog/bap/api
 
