@@ -4,20 +4,7 @@ set -eu
 
 TOKEN=$1
 
-echo "WHOAMI??"
-whoami
-
-
-ls -la
-pwd
-ls -l /home/opam/
 cd /home/opam/
-git clone https://github.com/BinaryAnalysisPlatform/bap
-
-
-
-echo DONE!!!
-exit
 
 bap="bap.master"
 ls -la
@@ -49,4 +36,4 @@ git add bap/api
 
 git commit -m $bap_commit
 #  git push $repo master # TODO!
-git push $repo add-actions
+git push $repo master
