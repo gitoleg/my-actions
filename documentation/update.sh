@@ -11,6 +11,9 @@ ls -l /home/opam/
 cd /home/opam/
 git clone https://github.com/BinaryAnalysisPlatform/bap
 
+
+
+echo DONE!!!
 exit
 
 bap="bap.master"
