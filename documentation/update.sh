@@ -5,10 +5,7 @@ set -eu
 TOKEN=$1
 
 cd /home/opam/
-echo DATA
-echo $HOME
-git config --list --show-origin
-whoami
+export HOME=/home/opam
 
 bap="bap.master"
 cd $bap
