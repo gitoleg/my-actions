@@ -16,6 +16,10 @@ ls doc
 
 blog=blog
 
+ls /
+
+exit
+
 #TODO
 git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=add-actions --depth=1 $blog
 
