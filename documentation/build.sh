@@ -12,7 +12,7 @@ git clone https://github.com/BinaryAnalysisPlatform/bap --single-branch --branch
 cd $bap
 bap_commit=`git rev-parse --short HEAD`
 
-#make doc
+make doc
 
 ls doc
 echo "build doc over"
