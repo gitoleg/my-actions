@@ -5,6 +5,10 @@ set -eu
 TOKEN=$1
 
 cd /home/opam/
+echo DATA
+echo $HOME
+git config --list --show-origin
+whoami
 
 bap="bap.master"
 cd $bap
@@ -12,20 +16,17 @@ bap_commit=`git rev-parse --short HEAD`
 
 blog=blog
 
+
+
 #TODO
 git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=add-actions --depth=1 $blog
 
 mkdir -p $blog/bap/api
 
-#TODO
-cp -r doc/lisp $GITHUB_WORKSPACE/
-#mv doc/man1 $blog/bap/api/
-#mv doc/man3 $blog/bap/api/
-#mv doc/lisp $blog/bap/api/
-#mv doc/odoc $blog/bap/api/
-
-#TODO
-exit
+mv doc/man1 $blog/bap/api/
+mv doc/man3 $blog/bap/api/
+mv doc/lisp $blog/bap/api/
+mv doc/odoc $blog/bap/api/
 
 cd $blog
 

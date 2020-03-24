@@ -8,6 +8,4 @@ RUN sudo apt-get install emacs-nox man2html --yes \
   && eval $(opam env) && opam install odig --yes \
   && ./build.sh
 
-USER root
-
 ENTRYPOINT ["sh", "/home/opam/update.sh"]
