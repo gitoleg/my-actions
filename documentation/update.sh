@@ -4,7 +4,8 @@ set -eu
 
 TOKEN=$1
 
-su opam
+echo "WHOAMI??"
+whoami
 
 
 ls -la
