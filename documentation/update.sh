@@ -13,10 +13,10 @@ bap_commit=`git rev-parse --short HEAD`
 
 blog=blog
 
-
-
 #TODO
 git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=add-actions --depth=1 $blog
+
+git reset --
 
 mkdir -p $blog/bap/api
 
