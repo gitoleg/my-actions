@@ -17,7 +17,7 @@ ls doc
 blog=blog
 
 #TODO
-git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=master --depth=1 $blog
+git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=add-actions --depth=1 $blog
 
 mkdir -p $blog/bap/api
 
@@ -36,4 +36,4 @@ git add bap/api
 
 git commit -m $bap_commit
 #  git push $repo master # TODO!
-git push $repo master
+git push $repo add-actions
