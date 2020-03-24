@@ -20,10 +20,10 @@ git reset --
 
 mkdir -p $blog/bap/api
 
-mv doc/man1 $blog/bap/api/
-mv doc/man3 $blog/bap/api/
-mv doc/lisp $blog/bap/api/
-mv doc/odoc $blog/bap/api/
+cp -r  doc/man1 $blog/bap/api/
+cp -r  doc/man3 $blog/bap/api/
+cp -r  doc/lisp $blog/bap/api/
+cp -rL doc/odoc $blog/bap/api/
 
 cd $blog
 
