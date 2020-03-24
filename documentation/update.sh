@@ -7,28 +7,25 @@ TOKEN=$1
 cd /home/opam/
 
 bap="bap.master"
-ls -la
-pwd
 cd $bap
 bap_commit=`git rev-parse --short HEAD`
 
-ls doc
-
 blog=blog
-
-ls /
-
-exit
 
 #TODO
 git clone https://github.com/gitoleg/binaryanalysisplatform.github.io --no-checkout --single-branch --branch=add-actions --depth=1 $blog
 
 mkdir -p $blog/bap/api
 
-mv doc/man1 $blog/bap/api/
-mv doc/man3 $blog/bap/api/
-mv doc/lisp $blog/bap/api/
-mv doc/odoc $blog/bap/api/
+#TODO
+cp -r doc/lisp $GITHUB_WORKSPACE/
+#mv doc/man1 $blog/bap/api/
+#mv doc/man3 $blog/bap/api/
+#mv doc/lisp $blog/bap/api/
+#mv doc/odoc $blog/bap/api/
+
+#TODO
+exit
 
 cd $blog
 
