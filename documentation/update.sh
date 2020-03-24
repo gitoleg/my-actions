@@ -8,7 +8,7 @@ TOKEN=$1
 ls -la
 pwd
 ls -l /home/opam/
-
+cd /home/opam/
 git clone https://github.com/BinaryAnalysisPlatform/bap
 
 exit
