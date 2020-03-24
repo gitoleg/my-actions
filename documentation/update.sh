@@ -4,6 +4,8 @@ set -eu
 
 TOKEN=$1
 
+su opam
+
 
 ls -la
 pwd
