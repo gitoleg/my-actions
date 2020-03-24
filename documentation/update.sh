@@ -4,6 +4,9 @@ set -eu
 
 TOKEN=$1
 
+
+ls -la
+
 git clone https://github.com/BinaryAnalysisPlatform/bap
 
 exit
